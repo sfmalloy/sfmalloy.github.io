@@ -1,0 +1,10 @@
+body {
+  font-size: 16pt;
+  font-family: monospace;
+}
+
+input {
+  resize: none;
+  font-size: 16pt;
+  font-family: monospace;
+}
