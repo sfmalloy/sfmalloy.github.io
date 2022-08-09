@@ -1,17 +1,24 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Left from './Left'
-import Right from './Right'
+import type { NextPage } from "next"
+import { useState } from "react"
+import Navbar from "./Left"
+import Content from "./Right"
+
+export enum CategoryState {
+  ABOUT,
+  GAMES,
+  WEB,
+  RANDOM
+}
 
 const Home: NextPage = () => {
+  const [category, setCategory] = useState(CategoryState.ABOUT);
+
   return (
-    <div>
-      <Left />
-      <Right />
+    <div className="bg-primary">
+      <Navbar setCategory={setCategory}/>
+      <Content category={category}/>
     </div>
   );
 }
 
-export default Home
+export default Home;

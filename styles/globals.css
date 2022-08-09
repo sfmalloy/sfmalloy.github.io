@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: #282828;
+}
+
+@keyframes fallIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.fall-animation {
+  animation: 500ms ease-out 0s 1 fallIn;
+}
+
+.delayed-fade {
+  animation: 500ms ease-out 250ms 1 fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}

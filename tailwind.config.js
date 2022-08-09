@@ -5,12 +5,16 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: 'DM Sans'
+    },
     extend: {
       colors: {
         primary: '#212121',
         secondary: '#282828',
-        ptext: '#eeffff',
-        stext: '#e34e41'
+        white: '#eeffff',
+        red: '#e34e41',
+        green: '#a9e88d'
       }
     },
   },
