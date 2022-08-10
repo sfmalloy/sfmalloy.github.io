@@ -11,8 +11,8 @@ const Navbar = (props: NavbarProps) => {
         <NavbarButton {...props} category={CategoryState.GAMES}>Games</NavbarButton>
         <NavbarButton {...props} category={CategoryState.WEB}>Web Projects</NavbarButton>
         <NavbarButton {...props} category={CategoryState.RANDOM}>Random</NavbarButton>
-        <a href="https://github.com/sfmalloy"><img className="float-right my-4 mr-8 hover:mr-4 transition-all duration-75 ease-linear" src='/GitHub.png' width='64px' height='64px'/></a>
-        <a href="https://woodmancodes.itch.io/"><img className="float-right my-4 mr-8 hover:mr-4 transition-all duration-75 ease-linear" src='/itchio.png' width='64px' height='64px'/></a>
+        <a className="my-4 mr-8 hover:mr-4 transition-all duration-75 ease-linear" href="https://github.com/sfmalloy"><img className="float-right" src='/GitHub.png' width='64px' height='64px'/></a>
+        <a className="my-4 mr-8 hover:mr-4 transition-all duration-75 ease-linear" href="https://woodmancodes.itch.io/"><img className="float-right" src='/itchio.png' width='64px' height='64px'/></a>
       </div>
     </div>
   );
@@ -20,10 +20,10 @@ const Navbar = (props: NavbarProps) => {
 
 const NavbarButton = (props: ButtonProps) => {
   return (
-    <div className="my-4 lg:my-5">
+    <div className="my-2 lg:my-2">
       <p 
         className="select-none cursor-pointer text-red text-right pr-8 text-2xl 
-          md:text-4xl hover:pr-4 transition-all duration-75 ease-linear"
+          md:text-3xl hover:pr-4 transition-all duration-75 ease-linear"
         onClick={() => props.setCategory(props.category)}
       >
         {props.children}

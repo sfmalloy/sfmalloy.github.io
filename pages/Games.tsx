@@ -1,66 +1,13 @@
+import { Link } from './Common';
 
-import React, { useEffect, useState } from "react";
-import { CategoryState } from ".";
-
-function Content(props: ContentProps) {
-  const [isSSR, setIsSSR] = useState(true);
-  let comp = [<About />, <Games />, <Projects />, <RandomStuff />][props.category];
-  useEffect(() => setIsSSR(false));
-  if (!isSSR) {
-    return (
-      <div className="w-[80%] float-right">
-        {comp}
-      </div>
-    );
-  }
-  return <></>;
-}
-
-function About() {
-  return (
-    <div className="flex flex-col">
-      <div>
-        <h1 className="text-center py-4 text-6xl fall-animation text-red font-bold underline decoration-2">About Me</h1>
-        <p className="text-white delayed-fade m-8 text-2xl">
-          <img className="float-right rounded-full m-8" src="https://avatars.githubusercontent.com/u/31411598" alt="Picture of a man" />
-          I graduated college in 2021 with a B.S. in Computer Science and am currently working
-          as a software developer. Some side interests include:
-          <ul className="list-disc list-inside pl-4 mt-8">
-            <li>Game Development using the <Link link="https://unity.com/">Unity</Link> game engine</li>
-            <li>Web Development with React and TypeScript (like <Link link="https://github.com/sfmalloy/sfmalloy.github.io"> this website</Link>)</li>
-            <li>Compilers and Programming Languages</li>
-            <li>Programming puzzles like ones from
-              {' '}<Link link="https://adventofcode.com/">Advent of Code</Link>,
-              {' '}<Link link="https://open.kattis.com/">Kattis</Link>, and
-              {' '}<Link link="https://projecteuler.net">Project Euler</Link>
-            </li>
-            <li>Other random stuff in Python or C++</li>
-          </ul>
-
-        </p>
-        <p className="text-white delayed-fade m-8 text-2xl">
-          Other than those I also enjoy playing video games, and music among other things.
-        </p>
-      </div>
-    </div>
-  );
-}
-
-function Projects(props: any) {
-  return (
-    <>
-      <h1 className="text-center py-4 text-6xl fall-animation text-red font-bold underline decoration-2">Web Projects</h1>
-    </>
-  );
-}
-
-function Games(props: any) {
+export default function Games() {
   return (
     <div>
       <h1 className="text-center py-4 text-6xl fall-animation text-red font-bold underline decoration-2">Games</h1>
       <p className="text-white delayed-fade m-8 text-2xl">
         Currently my game development experience is made up of short Game Jam games both in school and for fun out of school. 
-        These are some games I've made either on my own or as part of a small group.
+        These are some games I've made either on my own or as part of a small group. Click the picture or title to go to the
+        page for that game!
       </p>
       <div className="m-8">
         <Game 
@@ -95,20 +42,6 @@ function Games(props: any) {
   );
 }
 
-function RandomStuff(props: any) {
-  return (
-    <>
-      <h1 className="text-center py-4 text-6xl fall-animation text-red font-bold underline decoration-2">Random</h1>
-    </>
-  );
-}
-
-function Link(props: LinkProps) {
-  return (
-    <a className="text-green hover:underline" href={props.link}>{props.children}</a>
-  );
-}
-
 function Game(props: GameProps) {
   return (
     <div className="flex flex-row py-8 delayed-fade">
@@ -121,14 +54,6 @@ function Game(props: GameProps) {
   );
 }
 
-interface ContentProps {
-  category: CategoryState;
-}
-
-interface LinkProps extends React.PropsWithChildren {
-  link: string;
-}
-
 interface GameProps extends React.PropsWithChildren {
   link: string;
   img: string;
@@ -136,4 +61,3 @@ interface GameProps extends React.PropsWithChildren {
   title: string;
 }
 
-export default Content;
