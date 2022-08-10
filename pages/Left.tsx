@@ -3,15 +3,16 @@ import { CategoryState } from ".";
 
 const Navbar = (props: NavbarProps) => {
   return (
-    <div className=" object-scale-down w-1/3 h-screen 2xl:w-1/4 fixed bg-primary float-left">
+    <div className=" object-scale-down w-[20%] h-screen fixed bg-primary float-left">
       <h1 className="text-white text-center py-4 font-extrabold 
-        text-5xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl underline decoration-">Sean Malloy</h1>
+        text-4xl md:text-5xl lg:text-6xl">Sean<br/>Malloy</h1>
       <div className="flex flex-col align-end justify-end">
         <NavbarButton {...props} category={CategoryState.ABOUT}>About Me</NavbarButton>
         <NavbarButton {...props} category={CategoryState.GAMES}>Games</NavbarButton>
         <NavbarButton {...props} category={CategoryState.WEB}>Web Projects</NavbarButton>
         <NavbarButton {...props} category={CategoryState.RANDOM}>Random</NavbarButton>
         <a href="https://github.com/sfmalloy"><img className="float-right my-4 mr-8 hover:mr-4 transition-all duration-75 ease-linear" src='/GitHub.png' width='64px' height='64px'/></a>
+        <a href="https://woodmancodes.itch.io/"><img className="float-right my-4 mr-8 hover:mr-4 transition-all duration-75 ease-linear" src='/itchio.png' width='64px' height='64px'/></a>
       </div>
     </div>
   );
