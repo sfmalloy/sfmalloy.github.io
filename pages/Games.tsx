@@ -21,6 +21,17 @@ export default function Games() {
           </ul>
         </Game>
         <Game
+          title="ADOY"
+          link="https://github.com/mucsci-students/2021sp-475-ADOY"
+          img="/ADOY.png"
+          alt="Cover art containing the word ADOY">
+          <ul className="list-disc pl-8">
+            <li>A game about a mysterious, spooky creature that chases you through a maze.</li>
+            <li>Collect all 8 floating eggs to win the game before <strong>he</strong> catches you</li>
+            <li>Made as a school project in a group</li>
+          </ul>
+        </Game>
+        <Game
           title="Treasure Hunter"
           link="https://woodmancodes.itch.io/treasure-hunters"
           img="/TreasureHunter.png"
@@ -30,17 +41,6 @@ export default function Games() {
             <li>Small 2D platform where you go deeper and deeper into a cave to find the treasure that lies inside!</li>
             <li>Explore multiple paths as you find your way down the dark cave!</li>
             <li>I did the code and title screen music, and my roommate at the time did all the art</li>
-          </ul>
-        </Game>
-        <Game
-          title="ADOY"
-          link="https://github.com/mucsci-students/2021sp-475-ADOY"
-          img="/ADOY.png"
-          alt="Cover art containing the word ADOY">
-          <ul className="list-disc pl-8">
-            <li>A game about a mysterious, spooky creature that chases you through a maze.</li>
-            <li>Collect all 8 floating eggs to win the game before <strong>he</strong> catches you</li>
-            <li>Made as a school project in a group</li>
           </ul>
         </Game>
         <Game
@@ -64,6 +64,16 @@ export default function Games() {
             <li>Created for Ludum Dare 50 in one weekend</li>
             <li>Collect energy pellets and run towards different outlets that are constantly breaking!</li>
             <li>Frantically run around the library to keep your battery charged!</li>
+          </ul>
+        </Game>
+        <Game
+          title="Low Poly Odyssey"
+          link="https://woodmancodes.itch.io/charge-the-battery"
+          img="/lowpolyodyssey.png"
+          alt="Low poly space man">
+          <ul className="list-disc pl-8">
+            <li>A game about delivering packages in space.</li>
+            <li>Fly around delivering packages and finding repair points around your space station as quickly as possible to get the high score!</li>
           </ul>
         </Game>
       </div>
