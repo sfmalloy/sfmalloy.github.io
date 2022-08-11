@@ -6,7 +6,7 @@ import Games from './Games';
 function Content(props: ContentProps) {
   const [isSSR, setIsSSR] = useState(true);
   let comp = [<About />, <Games />, <Projects />, <RandomStuff />][props.category];
-  useEffect(() => setIsSSR(false));
+  useEffect(() => setIsSSR(false), []);
   if (!isSSR) {
     return (
       <div className="w-[80%] float-right">
