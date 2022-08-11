@@ -68,7 +68,7 @@ export default function Games() {
         </Game>
         <Game
           title="Low Poly Odyssey"
-          link="https://woodmancodes.itch.io/charge-the-battery"
+          link="https://github.com/mucsci-students/2021sp-475-LowPolyOdyssey"
           img="/lowpolyodyssey.png"
           alt="Low poly space man">
           <ul className="list-disc pl-8">
