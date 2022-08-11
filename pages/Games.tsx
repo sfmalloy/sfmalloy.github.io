@@ -84,7 +84,7 @@ export default function Games() {
 function Game(props: GameProps) {
   return (
     <div className="flex flex-row py-8 delayed-fade">
-      <a href={props.link} className="flex-shrink-0 self-center"><img className="w-[315px] h-[250px] object-contain" src={props.img} alt={props.alt} /></a>
+      <a href={props.link} className="flex-shrink-0 self-center"><picture><img className="w-[315px] h-[250px] object-contain" src={props.img} alt={props.alt} /></picture></a>
       <div className="px-4 max-w-4xl">
         <a href={props.link}><h2 className="pb-2 text-4xl text-green font-bold underline decoration-2">{props.title}</h2></a>
         <p className=" break-before-all text-white text-2xl">{props.children}</p>

@@ -6,7 +6,7 @@ export default function About() {
       <div>
         <h1 className="text-center py-4 text-6xl fall-animation text-red font-bold underline decoration-2">About Me</h1>
         <p className="text-white delayed-fade m-8 text-2xl">
-          <img className="float-right rounded-full m-8" src="https://avatars.githubusercontent.com/u/31411598" alt="Picture of a man" />
+          <picture><img className="float-right rounded-full m-8" src="https://avatars.githubusercontent.com/u/31411598" alt="Picture of a man" /></picture>
           I graduated college in 2021 with a B.S. in Computer Science and am currently working
           as a software developer. Some side interests include:
           <ul className="list-disc list-inside pl-4 mt-8">
