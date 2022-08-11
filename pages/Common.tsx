@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Link(props: LinkProps) {
+export default function Link(props: LinkProps) {
   return (
     <a className="text-green hover:underline" href={props.link}>{props.children}</a>
   );

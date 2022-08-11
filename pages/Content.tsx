@@ -5,7 +5,7 @@ import Games from './Games';
 
 function Content(props: ContentProps) {
   const [isSSR, setIsSSR] = useState(true);
-  let comp = [<About />, <Games />, <Projects />, <RandomStuff />][props.category];
+  let comp = [<About key={'about'}/>, <Games key={'games'}/>, <Projects key={'web'}/>, <RandomStuff key={'random'}/>][props.category];
   useEffect(() => setIsSSR(false), []);
   if (!isSSR) {
     return (

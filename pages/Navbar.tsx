@@ -12,10 +12,10 @@ const Navbar = (props: NavbarProps) => {
         {/* <NavbarButton {...props} category={CategoryState.WEB}>Web Projects</NavbarButton> */}
         {/* <NavbarButton {...props} category={CategoryState.RANDOM}>Random</NavbarButton> */}
         <a className="my-4 mr-8 hover:mr-4 transition-all duration-75 ease-linear" href="https://github.com/sfmalloy">
-          <picture><img className="float-right" src='/GitHub.png' width='64px' height='64px'/></picture>
+          <picture><img className="float-right" src='/GitHub.png' width='64px' height='64px' alt='GitHub logo'/></picture>
         </a>
         <a className="my-4 mr-8 hover:mr-4 transition-all duration-75 ease-linear" href="https://woodmancodes.itch.io/">
-          <picture><img className="float-right" src='/itchio.png' width='64px' height='64px'/></picture>
+          <picture><img className="float-right" src='/itchio.png' width='64px' height='64px' alt='ItchIO logo'/></picture>
         </a>
       </div>
     </div>

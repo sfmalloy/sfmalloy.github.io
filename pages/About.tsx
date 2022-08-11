@@ -1,4 +1,4 @@
-import { Link } from './Common';
+import Link from './Common';
 
 export default function About() {
   return (

@@ -1,4 +1,4 @@
-import { Link } from './Common';
+import Link from './Common';
 
 export default function Games() {
   return (
@@ -6,7 +6,7 @@ export default function Games() {
       <h1 className="text-center py-4 text-6xl fall-animation text-red font-bold underline decoration-2">Games</h1>
       <p className="text-white delayed-fade m-8 text-2xl">
         Currently my game development experience is made up of short Game Jam games both in school and for fun out of school.
-        These are some games I've made either on my own or as part of a small group. Click the picture or title to go to the
+        These are some games I&apos;ve made either on my own or as part of a small group. Click the picture or title to go to the
         page for that game! Every game here currently is made with the <Link link="https://unity.com">Unity</Link> game engine.
       </p>
       <div className="m-8">
@@ -16,7 +16,7 @@ export default function Games() {
           img="/TheBeeKeeper.png"
           alt="A pixel art man chasing a bee with a net.">
           <ul className="list-disc pl-8">
-            <li>Created for Brackey's Game Jam 2021.2</li>
+            <li>Created for Brackey&apos;s Game Jam 2021.2</li>
             <li>Chaotically fast clicker-type game where you attract and catch bees using various tools before time runs out!</li>
           </ul>
         </Game>
