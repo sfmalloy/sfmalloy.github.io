@@ -109,7 +109,8 @@ h3 {
   font-weight: 400;
 }
 
-.game:hover > .details {
+.game:hover > .details,
+a:focus .details {
   height: calc(100% - 32px);
 }
 
