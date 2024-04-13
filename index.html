@@ -8,7 +8,7 @@
   <title>Sean Malloy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -16,37 +16,70 @@
   <div id="content">
     <header>
       <h1>Sean Malloy</h1>
+      <img id="pfp" src="https://avatars.githubusercontent.com/u/31411598" alt="Profile picture">
     </header>
     <main>
-      <div id="description">
-        <img src="https://avatars.githubusercontent.com/u/31411598" alt="Profile picture of Sean">
-        <p>Graduated with a B.S. in Computer Science from Millersville University in 2021, and am currently working as an
-          Application Engineer. I like doing small side projects just for fun too. Languages I use most are Python, TypeScript, C++, and Java.</p>
-      </div>
-      <h3>Interests include:</h3>
-      <ul>
-        <li><strong>Game Development:</strong> I've participated in several game jams including <a
-            href="https://ldjam.com">Ludum Dare</a> and <a href="https://itch.io/jam/brackeys-6">Brackeys Game Jam
-            2021.2</a>.</li>
-        <li><strong>Computer Graphics:</strong> Mostly experimenting with OpenGL.</li>
-        <li><strong>Compilers:</strong> For (someday) making a <a href="https://github.com/sfmalloy/saplang">custom
-            programming language</a>.</li>
-        <li><strong>Web Development:</strong> Like this page, and some other small personal projects using React.</li>
-        <li><strong>Programming Puzzles:</strong> Like <a href="https://adventofcode.com">Advent of Code</a>, <a
-            href="https://open.kattis.com">Kattis</a>, and <a href="https://projecteuler.net">Project Euler</a>.</li>
-      </ul>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Hi! I'm Sean. I work as a software developer but I also do coding projects for fun. Lately I've been mostly doing things in Python/JavaScript. But I've
+          used C++ and C# as well for things like Unity and other graphics related projects. Below you'll find a sample of stuff I've done for fun! Enjoy.
+        </p>
+      </section>
+      <section id="games">
+        <h2>Games</h2>
+        <div id="game-container">
+          <a href="https://woodmangames.itch.io/treasure-hunters">
+            <div class="game">
+              <div class="details">
+                <div>
+                  <h3>Treasure Hunter</h3>
+                  <p>Dodge your way through obstacles and go deep into the cave to get the treasure! Game created for Ludum Dare 48.</p>
+                </div>
+              </div>
+              <img src="https://img.itch.zone/aW1nLzU3NzMzMjQucG5n/315x250%23c/02VQIN.png">
+            </div>
+          </a>
+          <a href="https://woodmangames.itch.io/the-bee-keeper">
+            <div class="game">
+              <div class="details">
+                <div>
+                  <h3>The Bee Keeper</h3>
+                  <p>Get as many bees as possible in the alloted time! Created for Brackeys Game Jam 2021.2</p>
+                </div>
+              </div>
+              <img src="https://img.itch.zone/aW1nLzY4NTQwMjUucG5n/315x250%23c/%2BRROrP.png">
+            </div>
+          </a>
+          <a href="https://woodmangames.itch.io/10s-puzzle-dash">
+            <div class="game">
+              <div class="details">
+                <div>
+                  <h3>10s Puzzle Dash</h3>
+                  <p>Fast paced top-down 2D puzzle platformer with a simple asthetic. Complete each level in under 10 seconds to win! Created for Ludum Dare 51.</p>
+                </div>
+              </div>
+              <img src="https://img.itch.zone/aW1nLzEwMTgxMDk5LnBuZw==/315x250%23c/8omlfX.png">
+            </div>
+          </a>
+          <a href="https://github.com/Simplicity-Studios/mecha-reactor">
+            <div class="game">
+              <div class="details">
+                <div>
+                  <h3>Mecha Reactor</h3>
+                  <p>A top-down shooter I contributed to for a project in a college game dev course. My focus was mostly on UI functionality/power-ups.</p>
+                </div>
+              </div>
+              <img class="bordered" src="https://camo.githubusercontent.com/5b2c1353382716b65e2f17ca886361bffe8a4d71401a6a2bda5474e455741908/68747470733a2f2f692e696d6775722e636f6d2f447257656669582e706e67" width="315" height="250">
+            </div>
+          </a>
+        </div>
+      </section>
+      <section id="other">
+        <h2>Other Projects</h2>
+        <p>// TODO. For now check out my <a href="https://github.com/sfmalloy">GitHub</a></p>
+      </section>
     </main>
-    <footer>
-      <a href="https://github.com/sfmalloy" class="social">
-        <span>[</span><span>github</span><span>]</span>
-      </a>
-      <a href="https://linkedin.com/in/sfmalloy" class="social">
-        <span>[</span><span>linkedin</span><span>]</span>
-      </a>
-      <a href="https://woodmancodes.itch.io/" class="social">
-        <span>[</span><span>itch.io</span><span>]</span>
-      </a>
-    </footer>
   </div>
 </body>
 

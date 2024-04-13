@@ -1,48 +1,49 @@
 :root {
-  --link-color: #3a40b0;
+  --link-color: black;
 }
 
 body {
   font-family: 'Fira Code', monospace;
   margin: 0;
-  background-color: #4a8655;
+  background-image: radial-gradient(black 1px, transparent 1px);
+  background-size: 16px 16px;
 }
 
 #content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 900px;
-  border: 1px solid black;
   padding: 16px;
-  border-radius: 5px;
-  background-color: #5fac6c;
+  max-width: 1200px;
+  margin: auto;
 }
 
 header {
-  text-align: center;
   font-size: 28px;
-}
-
-#description {
+  margin-bottom: 16px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  column-gap: 16px;
 }
 
-#description img {
-  width: 300px;
+header > img {
+  height: 100px;
   border-radius: 50%;
 }
 
-li {
-  list-style: none;
+header,
+section {
+  border: 1px solid black;
+  background-color: white;
+  box-shadow: 8px 8px black;
+  padding: 16px;
+  margin-bottom: 32px;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--link-color);
+}
+
+a:hover {
+  font-weight: 700;
 }
 
 a:visited {
@@ -56,38 +57,88 @@ footer {
   margin-top: 16px;
 }
 
-.social {
-  display: flex;
-}
-
-.social span {
-  transition: transform 100ms;
-}
-
-.social:hover span:nth-child(1) {
-  transform: translateX(-4px);
-}
-
-.social:hover span:nth-child(3) {
-  transform: translateX(4px);
-}
-
 h1,
-h2 {
+h2,
+h3 {
   margin: 0;
 }
 
-h3 {
-  margin: 16px 0 0 0;
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
   text-decoration: underline;
 }
 
-ul {
-  margin: 0;
+h3 {
+  font-size: 24px;
+  text-decoration: underline;
 }
 
-@media screen and (max-width: 900px) {
-  #content {
-    width: 95%;
+#game-container {
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  row-gap: 16px;
+  justify-items: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.game {
+  width: 315px;
+}
+
+.details {
+  max-height: 250px;
+  height: 0;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+  position: absolute;
+  width: 315px;
+  background-color: rgba(102, 102, 102, 0.767);
+  color: white;
+}
+
+.details > div {
+  padding: 16px;
+}
+
+.details p {
+  font-weight: 400;
+}
+
+.game:hover > .details {
+  height: calc(100% - 32px);
+}
+
+img {
+  display: block;
+  object-fit: contain;
+  width: 315px;
+}
+
+.bordered {
+  border: 1px solid black;
+  background-color: #eba715;
+  width: 313px;
+  height: 248px;
+}
+
+#pfp {
+  border-radius: 50%;
+  width: auto;
+}
+
+@media screen and (max-width: 1050px) {
+  #game-container {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #game-container {
+    grid-template-columns: 100%;
   }
 }
