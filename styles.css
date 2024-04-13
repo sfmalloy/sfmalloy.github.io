@@ -97,7 +97,8 @@ h3 {
   transition: all 300ms ease-in-out;
   position: absolute;
   width: 315px;
-  background-color: rgba(102, 102, 102, 0.767);
+  background-color: rgba(110, 110, 110, 0.767);
+  backdrop-filter: blur(5px);
   color: white;
 }
 
